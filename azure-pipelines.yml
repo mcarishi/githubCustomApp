@@ -14,6 +14,10 @@ steps:
   inputs:
     command: 'init'
     allowTelemetryCollection: true
-
-
+- task: TerraformCLI@0
+displayName: Terraform Plan
+  inputs:
+    command: 'plan'
+    environmentServiceName: 'Azure subscription 1(7ca7ed92-6be2-48ef-8dc0-57ad41e15798)'
+    allowTelemetryCollection: false
 
